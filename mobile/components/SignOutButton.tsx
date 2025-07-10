@@ -9,10 +9,16 @@ export const SignOutButton = () => {
   // Use `useClerk()` to access the `signOut()` function
   const { signOut } = useClerk();
 
-  const handleSignOut = async () => {
+  const handleSignOut = () => {
     Alert.alert("Logout", "Are you sure you want to logout?", [
       { text: "Cancel", style: "cancel" },
-      { text: "Logout", style: "destructive", onPress:signOut },
+      { text: "Logout", style: "destructive", onPress:() => {
+        signOut().catch((err) => {
+          Alert.alert("Error", "Logout unfailed.");
+          console.error(err);
+        });
+      },
+     },
     ]);
   };
 
