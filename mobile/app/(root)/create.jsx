@@ -1,12 +1,4 @@
-import {
-  View,
-  Text,
-  Alert,
-  TouchableOpacity,
-  TextInput,
-  ActivityIndicatorBase,
-  ActivityIndicator,
-} from "react-native";
+import {View, Text, Alert, TouchableOpacity, TextInput, ActivityIndicator} from "react-native";
 import { useRouter } from "expo-router";
 import { useUser } from "@clerk/clerk-expo";
 import { useState } from "react";
