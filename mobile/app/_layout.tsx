@@ -1,12 +1,13 @@
 import { Slot } from "expo-router";
 import { ClerkProvider } from '@clerk/clerk-expo';
 import SafeScreen from "@/components/SafeScreen";
-import { tokenCache } from '@clerk/clerk-expo/token-cache';
 import { StatusBar } from "expo-status-bar";
+
+const clerkPublishableKey = 'pk_test_ZW5hYmxpbmctc2hpbmVyLTIuY2xlcmsuYWNjb3VudHMuZGV2JA';
 
 export default function RootLayout() {
   return (
-    <ClerkProvider tokenCache={tokenCache}>
+    <ClerkProvider publishableKey={clerkPublishableKey}>
       <SafeScreen>
         <Slot />
       </SafeScreen>
