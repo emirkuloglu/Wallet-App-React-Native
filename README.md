@@ -26,7 +26,7 @@ Merhaba! Bu proje, **React Native** kullanılarak geliştirilmiş bir cüzdan y�
   <img width="200" alt="Screenshot_1752402827" src="https://github.com/user-attachments/assets/3f24ea9d-c816-4875-9e6b-b6c9e1672024" />
   <img width="200" alt="Screenshot_1752402672" src="https://github.com/user-attachments/assets/a6be88ca-d319-470b-9beb-02b2e748689d" />
   <img width="200" alt="Screenshot_1752402653" src="https://github.com/user-attachments/assets/3965ee29-4b08-4ae6-8b42-9437f5e0cc61" />
-  <img width="200" alt="untitled11.webm" src="https://github.com/user-attachments/assets/212567e3-9541-47d7-b852-5bd9e74a9623" />
+  https://github.com/user-attachments/assets/6dff03f3-cc5b-4831-acdb-50a96351b307  
 </p>
 
 ---
