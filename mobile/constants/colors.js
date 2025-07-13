@@ -50,12 +50,26 @@ const oceanTheme = {
   shadow: "#000000",
 };
 
+const darkTheme = {
+  primary: "#000000ff",
+  background: "#ffffffff",
+  text: "#000000ff",
+  border: "#a0a0a0ff",
+  white: "#FFFFFF",
+  textLight: "#000000ff",
+  expense: "#E74C3C",
+  income: "#2ECC71",
+  card: "#FFFFFF",
+  shadow: "#000000",
+};
+
 export const THEMES = {
   coffee: coffeeTheme,
   forest: forestTheme,
   purple: purpleTheme,
   ocean: oceanTheme,
+  dark: darkTheme,
 };
 
 // 👇 change this to switch theme
-export const COLORS = THEMES.coffee;
+export const COLORS = THEMES.dark;
