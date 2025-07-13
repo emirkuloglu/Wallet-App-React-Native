@@ -24,8 +24,9 @@ export const styles = StyleSheet.create({
     alignItems: "center",
   },
   headerLogo: {
-    width: 75,
-    height: 75,
+    width: 70,
+    height: 70,
+    marginBottom:11,
   },
   welcomeContainer: {
     flex: 1,

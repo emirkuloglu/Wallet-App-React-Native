@@ -56,7 +56,7 @@ export default function Page() {
     >
       <View style={styles.container}>
         <Image source={require("../../assets/images/revenue-i4.png")} style={styles.illustration} />
-        <Text style={styles.title}>Welcome Back</Text>
+        <Text style={styles.title}>Welcome</Text>
 
         {error ? (
           <View style={styles.errorBox}>
@@ -72,7 +72,7 @@ export default function Page() {
           style={[styles.input, error && styles.errorInput]}
           autoCapitalize="none"
           value={emailAddress}
-          placeholder="Enter email"
+          placeholder="Enter your email"
           placeholderTextColor="#9A8478"
           onChangeText={(emailAddress) => setEmailAddress(emailAddress)}
         />
@@ -80,7 +80,7 @@ export default function Page() {
         <TextInput
           style={[styles.input, error && styles.errorInput]}
           value={password}
-          placeholder="Enter password"
+          placeholder="Enter your password"
           placeholderTextColor="#9A8478"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}

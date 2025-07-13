@@ -126,14 +126,14 @@ export default function SignUpScreen() {
           autoCapitalize="none"
           value={emailAddress}
           placeholderTextColor="#9A8478"
-          placeholder="Enter email"
+          placeholder="Enter your email"
           onChangeText={(email) => setEmailAddress(email)}
         />
 
         <TextInput
           style={[styles.input, error && styles.errorInput]}
           value={password}
-          placeholder="Enter password"
+          placeholder="Enter your password"
           placeholderTextColor="#9A8478"
           secureTextEntry={true}
           onChangeText={(password) => setPassword(password)}
