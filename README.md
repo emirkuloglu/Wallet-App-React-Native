@@ -1,4 +1,4 @@
-# 👤 Wallet App
+# 💼 Wallet App
 
 Merhaba! Bu proje, **React Native** kullanılarak geliştirilmiş bir cüzdan yönetimi uygulamasıdır. Kullanıcılar giriş/çıkış yapabilir. Yeni kullanıcı oluşturulabilir. Gelirlerini ve harcamalarını ekleyip cüzdanını yönetebilir.
 
