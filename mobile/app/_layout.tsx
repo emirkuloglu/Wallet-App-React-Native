@@ -9,6 +9,7 @@ export default function RootLayout() {
   return (
     <ClerkProvider publishableKey={clerkPublishableKey}>
       <SafeScreen>
+        <StatusBar hidden={true}/>
         <Slot />
       </SafeScreen>
       
