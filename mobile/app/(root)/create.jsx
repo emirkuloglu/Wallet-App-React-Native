@@ -50,7 +50,7 @@ const CreateScreen = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          user_id: user.id,
+          userId: user.id,
           title,
           amount: formattedAmount,
           category: selectedCategory,
