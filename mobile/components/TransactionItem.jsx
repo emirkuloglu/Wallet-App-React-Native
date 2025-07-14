@@ -30,9 +30,7 @@ export const TransactionItem = ({ item, onDelete }) => {
           <Text style={styles.transactionCategory}>{item.category}</Text>
         </View>
         <View style={styles.transactionRight}>
-          <Text
-            style={[styles.transactionAmount, { color: isIncome ? COLORS.income : COLORS.expense }]}
-          >
+          <Text style={[styles.transactionAmount, { color: isIncome ? COLORS.income : COLORS.expense }]}>
             {isIncome ? "+" : "-"}${Math.abs(parseFloat(item.amount)).toFixed(2)}
           </Text>
           <Text style={styles.transactionDate}>{formatDate(item.created_at)}</Text>
