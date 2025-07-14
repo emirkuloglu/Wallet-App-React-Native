@@ -1,5 +1,7 @@
 import { sql } from "../config/db.js";
 
+console.log("Gelen POST body:", req.body);
+
 export async function getTransactionsByUserId(req, res) {
   try {
     const { userId } = req.params;

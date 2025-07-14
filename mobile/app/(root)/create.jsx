@@ -50,18 +50,29 @@ const CreateScreen = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          userId: user.id,
+          user_id: user.id,
           title,
           amount: formattedAmount,
           category: selectedCategory,
         }),
       });
 
+      let data;
+
+      const text = await response.text();
+        console.log("Gelen cevap (raw text):", text);
+
+        try {
+          data = JSON.parse(text);
+          console.log("JSON çözüldü:", data);
+        } catch (e) {
+          console.error("JSON Parse hatasi:", e.message);
+          Alert.alert("Sunucu Hatasi", "Gelen veri çözülemedi.");
+        }
+
       if (!response.ok) {
-        const errorData = await response.json();
-        console.log(errorData);
-        throw new Error(errorData.error || "Failed to create transaction");
-      }
+        throw new Error(data.message || "Failed to create transaction");
+      } 
 
       Alert.alert("Success", "Transaction created successfully");
       router.back();
