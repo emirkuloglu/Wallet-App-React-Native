@@ -104,6 +104,7 @@ const CreateScreen = () => {
 
       <View style={styles.card}>
         <View style={styles.typeSelector}>
+
           {/* EXPENSE SELECTOR */}
           <TouchableOpacity
             style={[styles.typeButton, isExpense && styles.typeButtonActive]}
@@ -119,6 +120,7 @@ const CreateScreen = () => {
               Expense
             </Text>
           </TouchableOpacity>
+
 
           {/* INCOME SELECTOR */}
           <TouchableOpacity
@@ -137,6 +139,7 @@ const CreateScreen = () => {
           </TouchableOpacity>
         </View>
 
+
         {/* AMOUNT CONTAINER */}
         <View style={styles.amountContainer}>
           <Text style={styles.currencySymbol}>$</Text>
@@ -149,6 +152,7 @@ const CreateScreen = () => {
             keyboardType="numeric"
           />
         </View>
+
 
         {/* INPUT CONTAINER */}
         <View style={styles.inputContainer}>
@@ -166,6 +170,7 @@ const CreateScreen = () => {
             onChangeText={setTitle}
           />
         </View>
+
 
         {/* TITLE */}
         <Text style={styles.sectionTitle}>

@@ -44,6 +44,7 @@ export default function Page() {
       <View style={styles.content}>
         {/* HEADER */}
         <View style={styles.header}>
+
           {/* LEFT */}
           <View style={styles.headerLeft}>
             <Image
@@ -58,6 +59,7 @@ export default function Page() {
               </Text>
             </View>
           </View>
+          
           {/* RIGHT */}
           <View style={styles.headerRight}>
             <TouchableOpacity style={styles.addButton} onPress={() => router.push("/create")}>
